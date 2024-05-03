@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--This page is built from an open source project made by Gaetano Bonofiglio that has a MIT license . The link for the original project is https://github.com/Kidel/HTML5-JS-Games
+    
+    MIT License
+
+    Copyright (c) 2017 Gaetano Bonofiglio
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+        
+    -->
+    <title>Sock's Game Arcade</title>
+    <style>
+       #pongCanvas{
+            padding: 0;
+            background: #111111;
+            display: block;
+            margin: 0 auto;
+        }       
+    </style>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header><h1>Sock's Game Arcade<span><img id="logo" src="./logo.png" alt="logo" ></span></h1>
+    <main>
+        <div id="game-title">Kidel's Pong</div>         
+        <div id="pong-game-background">       
+            <div class="game-explanation">
+            <p>For mouse users: hold on the up or down button with your mouse to move the paddle</p>
+            For keyboard users: Use the up and down keys to move the white bar on the left.
+            </div>
+            <canvas id="pongCanvas" width="480" height=" 320" onclick="reloadGame()"></canvas>
+            <p>
+             <button id="up-button">UP</button>
+             <button id="down-button">DOWN</button>
+             </p>
+            <script src="common.js"></script>
+            <script src="ping.js"></script>
+        </div>
+    </main>
+</body>
+    <footer>
+    <a href="./main.html">Go back to main page</a>
+    </footer>
+</html>

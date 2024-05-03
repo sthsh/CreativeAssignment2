@@ -1,0 +1,258 @@
+header {
+    text-align: center;    
+    font-size:100%;
+    background-color:#a1eeff;
+    margin:0;
+    padding: 10px 0px 10px 0px;
+    width:100vw;
+}
+
+footer {
+    text-align: center;    
+    font-size:100%;
+    background-color:#a1eeff;
+    margin:0;
+    padding: 10px 0px 10px 0px;
+    width:100vw;
+}
+
+img{
+}
+
+#logo{
+    width: auto;
+}
+
+h1{
+    font-family: "Comic Sans MS";
+    font-size:200%;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    background-image: url("./background.png");
+    bacground-repeat:repeat;
+    background-color:white;
+    width:100vw;
+}
+
+div.card-container{    
+    display:grid;
+    gap: 10px 10px;
+    margin:auto;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: auto auto;
+}
+
+div.card{
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    margin:10px 0;
+    padding:10px;
+    border: 3px solid black;
+    max-width:300px;
+}
+
+#game-title{
+    font-size:200%;
+    align-content: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+p.game-title{
+    align-content: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+div.game-explanation{
+    margin: 0 0 3vh 0;    
+}
+
+#rock-button, #scissor-button, #paper-button,#up-button,#down-button{
+    font-family: "Comic Sans MS";
+    padding: 1.5vh 1.5vh;
+    font-size: 150%;
+    border-radius: 30px;
+    border: 3px solid black;
+    font-weight:bold;
+}
+
+
+#rock-button:hover,#scissor-button:hover,#paper-button:hover,#up-button:hover,#down-button:hover {
+    transition-duration: 0.1s;
+    color:white;    
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+} 
+
+
+/* for the dice game */
+
+#dice-game-background{
+    width:100vw;
+    height:300px;
+}
+
+
+#dice-game-space img{
+    margin: 0 0 1vh 0;
+    border: 3px solid black;
+}
+
+#dice-game-space button{
+    padding: 1.5vh 1.5vh;
+    font-size: 150%;
+    border-radius: 4px;
+    background-color: #21c0ff;
+    color: #4500a6;
+    border: 3px solid #4500a6;
+}
+
+#dice-game-space button:hover {
+    transition-duration: 0.1s;
+    color:white;
+    box-shadow: ;
+    
+}
+
+/* for the rock scissors paper game */
+
+#rsp-game-background{    
+    width:100vw;
+    height:600px;
+}
+
+#rsp-game-space{
+    margin: 0 0 10vh 0;
+}
+
+#rsp-game-space img{
+    margin: 1vh 0 1vh 0;
+}
+
+#rsp-grid{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 200px 60px 200px;
+    grid-template-rows: 350px 10px;
+}
+
+#rsp-grid-left,#rsp-grid-right {
+    flex: 1;
+    text-align: center;
+}
+
+#rsp-grid-middle{
+    flex: 0 0 auto; 
+}
+
+#rsp-you,#rsp-computer{
+    border: 3px solid black;
+}
+
+#rsp-result{
+    font-family: "Comic Sans MS";
+    font-size:300%;
+    font-weight: bold;
+    margin:auto;
+}
+p.player-names{
+    font-family: "Comic Sans MS";
+    font-size:300%;
+    font-weight: bold;
+    margin:auto;
+}
+
+/* For snake game */
+
+#js-up-button,#js-down-button,#js-left-button,#js-right-button{    
+    font-family: "Comic Sans MS";
+    padding: 0.5vh 1.5vh;
+    font-size: 150%;
+    border-radius: 30px;
+    border: 3px solid black;
+    font-weight:black;    
+}
+
+/* For pong game*/
+
+span.scoretext{
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+#score{ 
+    display:inline;
+}
+#highscore{ 
+    display:inline;
+}
+
+
+/* Media query */
+
+@media only screen and (max-width: 810px){
+    div.card-container {
+        width: 80%;
+    }
+    div.card{
+        width: 80%;
+    }
+    img{
+        width: 80%;
+    }
+    
+    #logo{
+        width: auto;
+    }
+    
+    #dice-game-space img{
+        width: 15vw;
+    }
+    
+    #rsp-you,#rsp-computer{
+        width: 30vw;
+    }
+
+    #rsp-grid{
+        grid-template-columns: 150px 60px 150px;
+        grid-template-rows: 300px 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    div.card-container {
+        width: 70%;
+    }
+    div.card{
+        width: 70%;
+    }
+    img{
+        width: 70%;
+    }
+    
+    #logo{
+        width: auto;
+    }
+    
+    #rsp-you,#rsp-computer{
+        width: 30vw;
+    }
+
+    #rsp-grid{
+        grid-template-columns: 130px 60px 130px;
+        grid-template-rows: 300px 10px;
+    }
+    
+}

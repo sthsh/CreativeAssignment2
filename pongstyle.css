@@ -1,0 +1,19 @@
+
+/* For pong game */
+
+
+#pong-game-background{
+    height:380px;
+}
+
+#pong-game-space{
+}
+
+#pongCanvas{
+    padding: 0;
+    background: #111111;
+    display: block;
+    margin: 0 auto;
+    width: 480px;
+    height: 320px;
+}

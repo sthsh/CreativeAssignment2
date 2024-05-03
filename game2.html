@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>Sock's Game Arcade</title>
+    </head>
+    <body>
+        <header><h1>Sock's Game Arcade<span><img id="logo" src="./logo.png" alt="logo" ></span></h1>
+        <main>
+        <div id="game-title">Rock-Scissor-Paper</div>
+        <div id="rsp-game-background">
+           <div class="game-explanation">
+               <p>For mouse users: Click on one of the buttons to choose between rock, paper, and scissor and start the game.</p>
+               <p>For keyboard users: To start the game, Press on 'A' for rock, 'S' for scissors, and 'D' for paper.</p>
+           </div>
+            <div id="rsp-game-space">
+                <div id="rsp-result">Ready</div>
+                <div id="rsp-grid">
+                    <div id="rsp-grid-left">
+                        <p class="player-names"> YOU </p>
+                        <img id="rsp-you" src="./mystery.png" alt="Your choice">
+                    </div>
+                    <div id = "rsp-grid-middle">   
+                        <img id="vs" src="./VS.png" alt="Versus">
+                    </div>
+                    <div id = "rsp-grid-right">                    
+                        <p class="player-names"> COM </p>
+                        <img id="rsp-computer" src="./mystery.png" alt="The opponents choice">
+                    </div>                
+                </div>
+                <div>
+                    <button id="rock-button">Rock</button>
+                    <button id="scissor-button">Scissor</button>
+                    <button id="paper-button">Paper</button>
+                </div>
+            </div>
+            <script src="./game2.js"></script>
+        </div>
+        </main>
+        <footer>
+        <a href="./main.html">Go back to main page</a>
+        </footer>
+    </body>
+    
+</html>
